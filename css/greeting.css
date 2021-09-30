@@ -1,4 +1,4 @@
-#greeting {
+.greeting {
   margin-top: 1rem;
   padding: 10px 10px;
   border: 3px solid black;
@@ -11,4 +11,26 @@
   width: 120%;
   display: flex;
   justify-content: center;
+}
+
+#login-form input {
+  margin-top: 10px;
+  text-align: center;
+  background-color: royalblue;
+  border: 2px solid black;
+  padding: 5px;
+  margin-right: -5px;
+  margin-bottom: 10px;
+}
+
+#login-form input:first-child {
+  border-right: none;
+}
+
+#login-form input:focus {
+  outline: none;
+}
+
+#login-form input::placeholder {
+  color: orange;
 }

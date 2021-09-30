@@ -27,17 +27,20 @@
             required
             maxlength="15"
             type="text"
-            placeholder="what is your name?"
+            placeholder="who r u?"
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='who r u?'"
           />
           <input type="submit" value="Log in" />
         </form>
-        <h1 id="greeting" class="hidden"></h1>
+        <h1 class="greeting hidden"></h1>
         <!--todolist-->
         <form id="todo-form">
           <input
             type="text"
-            placeholder="What u gonna do"
+            placeholder="what u gonna do"
             onfocus="this.placeholder=''"
+            onblur="this.placeholder='what u gonna do'"
             required
           />
         </form>
