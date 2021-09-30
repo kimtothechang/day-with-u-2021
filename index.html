@@ -7,30 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Momentum App</title>
   </head>
-  <body>
-    <h2 id="clock">00:00:00</h2>
-    <form id="login-form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="what is your name?"
-      />
-      <input type="submit" value="Log in" />
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required>
-    </form>
-    <ul id="todo-list">
-    </ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
+  <body id="body">
+    <div class="header">
+      <div class="column1">
+        <!--weather-->
+        <div id="weather">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="column2">
+        <!--clock-->
+        <div class="clock-div">
+          <h2 id="clock">00:00:00</h2>
+        </div>
+        <!--greeting-->
+        <form id="login-form" class="hidden">
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="what is your name?"
+          />
+          <input type="submit" value="Log in" />
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+      </div>
+      <div class="column3">
+        <!--quote-->
+        <div id="quote">
+          <span>급훈</span>
+          <br>
+          <span class="quote"></span>
+          <span class="author"></span>
+        </div>
+      </div>
     </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
+    <div class="main">
+      <!--todolist-->
+      <form id="todo-form">
+        <input type="text" placeholder="What u gonna do" required />
+      </form>
+      <ul id="todo-list"></ul>
+      </div>
     </div>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
@@ -38,5 +57,9 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
