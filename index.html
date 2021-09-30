@@ -34,7 +34,12 @@
         <h1 id="greeting" class="hidden"></h1>
         <!--todolist-->
         <form id="todo-form">
-          <input type="text" placeholder="What u gonna do" required />
+          <input
+            type="text"
+            placeholder="What u gonna do"
+            onfocus="this.placeholder=''"
+            required
+          />
         </form>
         <ul id="todo-list"></ul>
       </div>
