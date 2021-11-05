@@ -24,10 +24,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  flex-wrap: wrap;
 }
 
 #todo-list li {
-  margin: 30px;
+  margin: 15px;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -52,6 +54,7 @@ li button {
   color: white;
   border: 0px;
   position: absolute;
+  top: 2px;
   right: 2px;
 }
 
