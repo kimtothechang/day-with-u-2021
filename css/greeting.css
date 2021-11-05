@@ -1,9 +1,9 @@
 .greeting {
   margin-top: 1rem;
   padding: 10px 10px;
-  border: 3px solid black;
-  background-color: royalblue;
-  color: orange;
+  border: 0px;
+  background: inherit;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 2.5rem;
   font-style: italic;
   margin-bottom: 1rem;
@@ -16,11 +16,13 @@
 #login-form input {
   margin-top: 10px;
   text-align: center;
-  background-color: royalblue;
-  border: 2px solid black;
+  background: inherit;
+  border: 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
   padding: 5px;
   margin-right: -5px;
   margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 #login-form input:first-child {
@@ -32,5 +34,5 @@
 }
 
 #login-form input::placeholder {
-  color: orange;
+  color: rgba(255, 255, 255, 0.8);
 }

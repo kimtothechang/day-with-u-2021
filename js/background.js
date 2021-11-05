@@ -1,5 +1,6 @@
 const images = [
   "0.jpeg",
+  "1.png",
   "2.jpeg",
   "3.jpeg",
   "4.jpeg",
@@ -20,7 +21,7 @@ const images = [
   "19.jpeg",
 ];
 
-const chosenImage = images[10 + Math.floor(Math.random() * 9)];
+const chosenImage = images[0 + Math.floor(Math.random() * 3)];
 
 const bgImage = document.querySelector("#body");
 
