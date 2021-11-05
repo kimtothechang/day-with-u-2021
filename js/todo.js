@@ -6,11 +6,14 @@ const add = new Audio("audio/add.mp3");
 const done = new Audio("audio/done.mp3");
 
 const TODOS_KEY = "todos";
+const ABOUT_KEY = "about";
 
 let toDos = [];
+let about = [];
 
 function saveToDos() {
   localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
+  localStorage.setItem(ABOUT_KEY, JSON.stringify(about));
 }
 
 function deleteToDo(event) {
@@ -28,8 +31,12 @@ function paintToDo(newTodoObj) {
   const button = document.createElement("button");
   button.innerText = "X";
   button.addEventListener("click", deleteToDo);
+  const textarea = document.createElement("textarea");
+  textarea.setAttribute("placeholder", "write something..");
+  textarea.setAttribute("spellcheck", "false");
   li.appendChild(span);
   li.appendChild(button);
+  li.appendChild(textarea);
   toDoList.appendChild(li);
 }
 
